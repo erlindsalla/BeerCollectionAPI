@@ -1,0 +1,15 @@
+# Build results
+bin/
+obj/
+
+# SQLite database files
+*.db
+*.sqlite
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+.vs/
