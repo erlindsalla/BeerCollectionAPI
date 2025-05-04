@@ -1,3 +1,4 @@
+cat > .gitignore << 'EOF'
 # Build results
 bin/
 obj/
@@ -13,3 +14,4 @@ obj/
 *.sln.docstates
 .vscode/
 .vs/
+EOF
