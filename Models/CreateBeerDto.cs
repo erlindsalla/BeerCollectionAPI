@@ -9,8 +9,8 @@ namespace BeerCollectionAPI.Models
         public string Name { get; set; }
 
         [Required]
-        [StringLength(50)]
-        public string Type { get; set; }
+        [EnumDataType(typeof(BeerType), ErrorMessage = "Beer type must be one of: Pale, Ale, Heineken")]
+        public BeerType Type { get; set; }
 
         [Range(1, 5)]
         public int? Rating { get; set; }

@@ -4,11 +4,21 @@ using System.Linq;
 
 namespace BeerCollectionAPI.Models
 {
+    public enum BeerType
+    {
+        Pale,
+        Ale,
+        Heineken
+    }
+}
+
+namespace BeerCollectionAPI.Models
+{
     public class Beer
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Type { get; set; }
+        public BeerType Type { get; set; }
 
         [System.Text.Json.Serialization.JsonIgnore]
         public List<int> RawRatings { get; set; } = new List<int>();
